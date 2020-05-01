@@ -1,0 +1,11 @@
+//@prepros-append lib/jquery-1.12.0.min.js
+//@prepros-append lib/modernizr-custom.js
+//@prepros-append lib/detectIE.js
+//@prepros-append lib/svgeezy.js
+//@prepros-append lib/jquery.paroller.min.js
+//@prepros-append lib/jquery.waypoints.min.js
+//@prepros-append lib/jquery.images-rotation.js
+//@prepros-append lib/imagesloaded.pkgd.min.js
+//@prepros-append lib/masonry.pkgd.min.js
+//@prepros-append lib/jquery.jInvertScroll.js
+//@prepros-append global.js

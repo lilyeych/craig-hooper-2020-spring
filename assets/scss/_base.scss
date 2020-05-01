@@ -1,0 +1,245 @@
+.animated {
+	animation-delay: 0.5s;
+}
+
+.clear {
+	@extend %clear;
+}
+
+.hide {
+	display: none;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* General styles */
+
+// CRAIG Uncomment these to add background images.
+// html {
+// 	background: url('../img/bg@2x.jpg') no-repeat top center;
+// 	background-size: 100%;
+// }
+//
+// .portfolio {
+// 	background-image: url('../img/bg-projects@2x.jpg');
+// }
+
+body {
+	&.dark {
+		background-color: $black;
+
+		h1, h2, h3, h4, h5, h6, p  {
+			color: $white;
+		}
+
+		a {
+			&:link,
+			&:visited {
+				color: $corp1Light;
+			}
+
+			&:hover,
+			&:active {
+				color: $white;
+			}
+		}
+	}
+}
+
+.btn {
+	display: inline-block;
+	border: 1px solid $corp1;
+	border-radius: 5.0rem;
+
+	&:hover,
+	&.active {
+		border-color: $black;
+	}
+}
+
+img[class*="emoji-"] {
+	display: block;
+	margin: 40px auto;
+	width: 26px;
+	height: auto;
+}
+
+.emoji-greeting {
+	display: inline-block !important;
+	margin: 0 10px !important;
+	width: 36px !important;
+	height: auto !important;
+}
+
+.divi {
+	&:after {
+		content: "";
+		display: block;
+		margin: 0 auto 6px auto;
+		width: 20px;
+		height: 1px;
+		background-color: $grey;
+	}
+}
+
+span[class*="scratch"] {
+	@extend %scratch;
+}
+
+.pace-container {
+	overflow: hidden;
+}
+
+.intro {
+	margin-bottom: 80px;
+
+	@include breakpoint (baby-bear) {
+		margin-bottom: 200px;
+	}
+}
+
+footer {
+	text-align: center;
+
+	.btn {
+		margin-bottom: 80px;
+	}
+
+	p {
+		color: $grey;
+		margin-bottom: 0;
+	}
+
+	h3 {
+		margin-bottom: 80px;
+
+		@include breakpoint (baby-bear) {
+			margin-bottom: 160px;
+		}
+	}
+
+	a:link,
+	a:visited {
+		color: $black;
+	}
+	a:hover,
+	a:active {
+		// color: $corp1;
+	}
+}
+
+.shadow {
+	@extend %shadow;
+}
+
+.btn {
+	box-sizing: border-box;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	font-weight: 200;
+	border-radius: 3px;
+	padding: 14px 50px;
+
+	@include breakpoint (max-baby-bear) {
+		width: 90%;
+		max-width: 90%;
+		padding: 18px;
+	}
+
+	&:link,
+	&:visited {
+	}
+
+	&:hover,
+	&:active {
+	}
+}
+
+.btn-light {
+	&:link,
+	&:visited {
+		color: $corp1Light !important;
+		border: 1px solid rgba($corp1Light, 0.4);
+	}
+
+	&:hover,
+	&:active {
+		color: $white !important;
+		border-color: $white;
+	}
+}
+
+.btn-solid {
+	&:link,
+	&:visited {
+		color: $white !important;
+		background-color: $corp1;
+		border: 1px solid $corp1;
+	}
+
+	&:hover,
+	&:active {
+		color: $white !important;
+		background-color: $darkGrey;
+		border: 1px solid $darkGrey;
+	}
+}
+
+.btn-solid-dark {
+	&:link,
+	&:visited {
+		color: $white !important;
+		background-color: $darkGrey;
+		border: 1px solid $darkGrey;
+	}
+
+	&:hover,
+	&:active {
+		color: $white !important;
+		background-color: $corp1;
+		border: 1px solid $corp1;
+	}
+}
+
+.blob-1 {
+	position: absolute;
+	display: block;
+	width: 170px;
+	height: 132px;
+	-webkit-transition: .15s ease-in-out;
+	-moz-transition: .15s ease-in-out;
+	-o-transition: .15s ease-in-out;
+
+	-webkit-transition-property: background-position;
+	-moz-transition-property: background-position;
+	-o-transition-property: background-position;
+
+	@include breakpoint (baby-bear) {
+		width: 270px;
+		height: 211px;
+	}
+}
+
+.blob-2 {
+	position: absolute;
+	display: block;
+	width: 270px;
+	height: 141px;
+	-webkit-transition: .15s ease-in-out;
+	-moz-transition: .15s ease-in-out;
+	-o-transition: .15s ease-in-out;
+
+	-webkit-transition-property: background-position;
+	-moz-transition-property: background-position;
+	-o-transition-property: background-position;
+
+	@include breakpoint (baby-bear) {
+		width: 370px;
+		height: 194px;
+	}
+}

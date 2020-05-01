@@ -1,0 +1,39 @@
+.project-image-large img,
+.project-image-small img {
+  margin-bottom: 2.0rem;
+  @include breakpoint (baby-bear) {
+    margin-bottom: 6.0rem;
+  }
+}
+
+.archive {
+  background-color: #FFFEF9;
+
+  h6 {
+    color: $grey;
+  }
+
+  .project {
+    width: 100%;
+    margin-bottom: 6.0rem;
+    @include breakpoint (baby-bear) {
+      margin-bottom: 11.0rem;
+    }
+  }
+
+  .project-description {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 5.0rem;
+    @include breakpoint (baby-bear) {
+      margin-bottom: 8.0rem;
+    }
+  }
+
+  .project-image-large img {
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

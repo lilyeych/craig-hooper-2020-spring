@@ -1,0 +1,245 @@
+$susy: (
+	columns: 12,
+	gutters: 0.42857,
+	math: fluid,
+	output: float,
+	gutter-position: split,
+	// debug: (image: show)
+);
+
+.container {
+	@extend %clear;
+
+	@include container(1200px);
+	width: 95%;
+	box-sizing: border-box;
+
+	@include breakpoint(baby-bear) {
+		@include show-grid(12);
+		width: 90%;
+	}
+}
+
+.full-width-container {
+	@extend %clear;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.container.browser-bg {
+	@include breakpoint(max-baby-bear) {
+    width: 100%;
+  }
+}
+
+.narrow-container {
+	width: 92.50002%;
+	float: left;
+	margin-left: 3.74999%;
+	margin-right: 3.74999%;
+
+	@include breakpoint (baby-bear) {
+		@include span(6 at 4 isolate);
+	}
+}
+
+// homepage Craigs
+.craig-1 {
+	@include span(2);
+}
+
+.craig-2 {
+	@include span(4 of 4);
+
+	@include breakpoint (tiny-bear) {
+		@include span(4 at 3 isolate);
+	}
+}
+
+.craig-3 {
+	@include span(2 at 9 isolate);
+}
+
+// homepage projects
+.homepage .project {
+	@include span(4 of 4);
+
+	@include breakpoint (baby-bear) {
+		@include span(10 at 2 isolate);
+	}
+}
+
+.homepage .project:nth-child(odd) {
+	@include breakpoint (tiny-bear) {
+	  @include span(5);
+	  margin-right: span(1) + gutter(4);
+	}
+}
+
+.homepage .project:nth-child(even) {
+	@include breakpoint (tiny-bear) {
+	  @include span(5);
+		margin-left: span(1) + gutter(4);
+	}
+}
+//
+// // project-collage
+// .project-collage {
+// 	@include breakpoint (baby-bear) {
+// 		@include span(10 at 2 isolate);
+// 	}
+//
+// 	@include breakpoint (max-tiny-bear) {
+// 		picture[class*="col-"] {
+// 			&:nth-child(1) {
+// 				@include span(4 of 4);
+// 				margin-bottom: 20px;
+// 			}
+//
+// 			&:nth-child(2),
+// 			&:nth-child(3) {
+// 				@include span(2 of 4);
+// 			}
+// 		}
+//
+// 	}
+//
+// 	.col-2 {
+// 		@include span(2 of 10);
+// 		float: none;
+// 	}
+//
+// 	.col-3 {
+// 		@include span(3 of 10);
+// 		float: none;
+// 	}
+//
+// 	.col-4 {
+// 		@include span(4 of 10);
+// 		float: none;
+// 	}
+//
+// 	.col-5 {
+// 		@include span(5 of 10);
+// 		float: none;
+// 	}
+//
+// 	.col-6 {
+// 		@include span(6 of 10);
+// 		float: none;
+// 	}
+//
+// 	.col-7 {
+// 		@include span(7 of 10);
+// 		float: none;
+// 	}
+//
+// 	.col-8 {
+// 		@include span(8 of 10);
+// 		float: none;
+// 	}
+// }
+
+.back {
+	@include span(4 of 4);
+}
+
+.project-brief {
+	.left {
+		@include span(4 of 4);
+
+		@include breakpoint (baby-bear) {
+			@include span(5 at 2 isolate);
+		}
+	}
+
+	.right {
+		@include span(4 of 4);
+
+		@include breakpoint (baby-bear) {
+			@include span(5 at 7 isolate);
+		}
+	}
+
+	.center {
+		@include span(4 of 4);
+
+		@include breakpoint (baby-bear) {
+			@include span(4 at 5 isolate);
+		}
+	}
+}
+.main-portfolio-img,
+.laptop-portfolio-img {
+	@include span(4 of 4);
+}
+
+.browser-portfolio-img,
+.project-image-large {
+	@include span(4 of 4);
+
+	@include breakpoint (baby-bear) {
+		@include span(10);
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+.project-image-small img {
+	@include span(2 of 4);
+
+	@include breakpoint (baby-bear) {
+		@include span(5);
+		&:first-child {
+			margin-left: span(1) + gutter(4);
+		}
+	}
+}
+
+.phone-portfolio-img {
+	@include span(4 of 4);
+
+	@include breakpoint (baby-bear) {
+		@include span(6);
+
+		&.right {
+			@include span(6 last);
+		}
+	}
+
+}
+
+.dsc-container {
+	@include span(4 of 4);
+
+	@include breakpoint (baby-bear) {
+		@include span(6);
+	}
+}
+
+.phone-portfolio-dsc {
+	@include breakpoint (baby-bear) {
+		@include span(5);
+
+		&.right {
+			margin-left: span(1);
+		}
+
+		&.left {
+			margin-right: span(1);
+		}
+	}
+}
+
+.archive-intro,
+.archive-image {
+	@include span(4 of 4);
+}
+
+.archive {
+	.col-2 {
+		@include breakpoint(baby-bear) {
+			@include span(6);
+		}
+	}
+}

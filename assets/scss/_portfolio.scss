@@ -1,0 +1,86 @@
+.portfolio {
+	background-color: #FFFEF9;
+
+	.project-detail {
+		margin-bottom: 0;
+	}
+
+	.project-collage {
+		@extend %vspacing;
+
+		img {
+			position: relative;
+			width: 130%;
+			max-width: 130%;
+
+			@include breakpoint (baby-bear) {
+				width: 1770px;
+				max-width: 1770px;
+			}
+		}
+	}
+
+	.project-brief {
+		@extend %vspacing;
+
+		.title {
+			margin-bottom: 20px;
+		}
+	}
+
+	.screens {
+		@extend %vspacing;
+	}
+
+	// .browser-bg {
+	// 	background-color: #ededed;
+	// 	padding-top: 2.5rem;
+	// 	padding-bottom: 2.5rem;
+	// 	@include breakpoint (tiny-bear) {
+	// 		padding-top: 3.5rem;
+	// 		padding-bottom: 3.5rem;
+	// 	}
+	// 	@include breakpoint (baby-bear) {
+	// 		padding-top: 6.0rem;
+	// 		padding-bottom: 6.0rem;
+	// 	}
+	// 	@include breakpoint (mama-bear) {
+	// 		padding-top: 7.5rem;
+	// 		padding-bottom: 7.5rem;
+	// 	}
+	// 	@include breakpoint (papa-bear) {
+	// 		padding-top: 10.0rem;
+	// 		padding-bottom: 10.0rem;
+	// 	}
+	//
+	// 	img {
+	// 		@include breakpoint (max-baby-bear) {
+	// 			max-width: 95%;
+	// 			margin-left: auto;
+	// 			margin-right: auto;
+	// 		}
+	// 	}
+	// }
+
+	.row {
+		position: relative;
+		@extend %vspacing;
+	}
+
+	.browser-row {
+		@extend %browserspacing;
+	}
+
+
+	.project-image-small img {
+		@extend %browserspacing;
+	}
+
+	.portfolio-img-end {
+		margin-bottom: 50px;
+
+		@include breakpoint (baby-bear) {
+			margin-bottom: 120px;
+		}
+	}
+}

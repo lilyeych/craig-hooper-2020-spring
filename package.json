@@ -1,0 +1,26 @@
+{
+  "name": "craig-hooper-summer-2018",
+  "version": "1.0.0",
+  "description": "Craig Hooper portoflio website Summer 2018",
+  "main": "index.js",
+  "browserslist": [
+    "last 3 version"
+  ],
+  "scripts": {
+    "node-sass": "node-sass assets/scss/ -o assets/css/",
+    "build-css": "postcss --use autoprefixer -b <assets/css/styles.css | cssmin > assets/css/styles.min.css",
+    "watch": "nodemon -e scss -x \"npm run node-sass & npm run build-css\""
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "autoprefixer": "^9.1.2",
+    "cssmin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3",
+    "postcss": "^7.0.2",
+    "postcss-cli": "^6.0.0",
+    "susy": "^2.2.12",
+    "uglify-js": "^3.4.7"
+  }
+}
