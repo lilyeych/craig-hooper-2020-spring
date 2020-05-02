@@ -812,9 +812,11 @@ footer {
   -webkit-transition: .15s ease-in-out;
   -moz-transition: .15s ease-in-out;
   -o-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -o-transition-property: background-position; }
+  -o-transition-property: background-position;
+  transition-property: background-position; }
   @media (min-width: 768px) {
     .blob-1 {
       width: 270px;
@@ -828,9 +830,11 @@ footer {
   -webkit-transition: .15s ease-in-out;
   -moz-transition: .15s ease-in-out;
   -o-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -o-transition-property: background-position; }
+  -o-transition-property: background-position;
+  transition-property: background-position; }
   @media (min-width: 768px) {
     .blob-2 {
       width: 370px;

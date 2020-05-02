@@ -130,10 +130,6 @@ footer {
 	a:visited {
 		color: $black;
 	}
-	a:hover,
-	a:active {
-		// color: $corp1;
-	}
 }
 
 .shadow {
@@ -152,14 +148,6 @@ footer {
 		width: 90%;
 		max-width: 90%;
 		padding: 18px;
-	}
-
-	&:link,
-	&:visited {
-	}
-
-	&:hover,
-	&:active {
 	}
 }
 
@@ -216,11 +204,13 @@ footer {
 	height: 132px;
 	-webkit-transition: .15s ease-in-out;
 	-moz-transition: .15s ease-in-out;
-	-o-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
 
 	-webkit-transition-property: background-position;
 	-moz-transition-property: background-position;
-	-o-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
 
 	@include breakpoint (baby-bear) {
 		width: 270px;
@@ -235,11 +225,13 @@ footer {
 	height: 141px;
 	-webkit-transition: .15s ease-in-out;
 	-moz-transition: .15s ease-in-out;
-	-o-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
 
 	-webkit-transition-property: background-position;
 	-moz-transition-property: background-position;
-	-o-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
 
 	@include breakpoint (baby-bear) {
 		width: 370px;
