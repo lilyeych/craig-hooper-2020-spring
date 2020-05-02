@@ -2,88 +2,16 @@
 $corp1: #0000FF;
 $corp1Light: #96D0FF;
 $lightPeach: #FFCCC9;
+$yellow: #FFFEF2;
 $grey: #636363;
 $lightGrey: #FAFAFA;
 $darkGrey: #2F2F2F;
 $white: #F8F8F8;
-$black: #000000;
+$black: #1B1B1B;
 $archive: #FBFBFB;
 $zbg: 0;
 $zcontent: 10;
 $zheader: 20;
-
-//Maison Neue
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url('../font/Beatrice-Regular.woff2') format('woff2'),
-       url('../font/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Beatrice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-       font-weight: 700;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url('../font/Beatrice-Regular.woff2') format('woff2'),
-       url('../font/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Beatrice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-       font-weight: 700;
-       font-style: italic;
-}
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url('../font/Beatrice-Regular.woff2') format('woff2'),
-       url('../font/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Beatrice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-       font-weight: 400;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url('../font/Beatrice-Regular.woff2') format('woff2'),
-       url('../font/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Beatrice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-       font-weight: 400;
-       font-style: italic;
-}
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url('../font/Beatrice-Regular.woff2') format('woff2'),
-       url('../font/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Beatrice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-       font-weight: 300;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url('../font/mBeatrice-Regular.woff2') format('woff2'),
-       url('../font/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Beatrice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-       font-weight: 300;
-       font-style: italic;
-}
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url('../font/Beatrice-Regular.woff2') format('woff2'),
-       url('../font/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Beatrice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-       font-weight: 200;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url('../font/Beatrice-Regular.woff2') format('woff2'),
-       url('../font/Beatrice-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Beatrice-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
-       font-weight: 200;
-       font-style: italic;
-}
 
 @font-face {
   font-family: 'Cooper Light';
@@ -92,12 +20,40 @@ $zheader: 20;
        url('../font/38C4BA_0_0.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
+@font-face {
+  font-family: 'Eckmannpsych';
+  src: url('../font/Eckmannpsych-Small.woff2') format('woff2'),
+       url('../font/Eckmannpsych-Small.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/Eckmannpsych-Small.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../font/Degular-Black.woff2') format('woff2'),
+       url('../font/Degular-Black.woff') format('woff'); /* Pretty Modern Browsers */
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../font/Degular-Bold.woff2') format('woff2'),
+       url('../font/Degular-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('../font/Degular-Medium.woff2') format('woff2'),
+       url('../font/Degular-Medium.woff') format('woff'); /* Pretty Modern Browsers */
+  font-weight: 500;
+}
+
 %font-header {
-  font-family: "Cooper Light", "Times New Roman", Times, serif;
+  font-family: "Eckmannpsych", "Times New Roman", Times, serif;
 }
 
 %font-body {
-  font-family: "Beatrice Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Degular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 @mixin breakpoint($point) {

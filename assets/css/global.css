@@ -211,73 +211,40 @@ body {
   left: 0; }
 
 @font-face {
-  font-family: 'Beatrice Regular';
-  src: url("../font/Beatrice-Regular.woff2") format("woff2"), url("../font/Beatrice-Regular.woff") format("woff"), url("../font/Beatrice-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url("../font/Beatrice-Regular.woff2") format("woff2"), url("../font/Beatrice-Regular.woff") format("woff"), url("../font/Beatrice-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-weight: 700;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url("../font/Beatrice-Regular.woff2") format("woff2"), url("../font/Beatrice-Regular.woff") format("woff"), url("../font/Beatrice-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url("../font/Beatrice-Regular.woff2") format("woff2"), url("../font/Beatrice-Regular.woff") format("woff"), url("../font/Beatrice-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-weight: 400;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url("../font/Beatrice-Regular.woff2") format("woff2"), url("../font/Beatrice-Regular.woff") format("woff"), url("../font/Beatrice-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url("../font/mBeatrice-Regular.woff2") format("woff2"), url("../font/Beatrice-Regular.woff") format("woff"), url("../font/Beatrice-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url("../font/Beatrice-Regular.woff2") format("woff2"), url("../font/Beatrice-Regular.woff") format("woff"), url("../font/Beatrice-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-weight: 200;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Beatrice Regular';
-  src: url("../font/Beatrice-Regular.woff2") format("woff2"), url("../font/Beatrice-Regular.woff") format("woff"), url("../font/Beatrice-Regular.ttf") format("truetype");
-  /* Safari, Android, iOS */
-  font-weight: 200;
-  font-style: italic; }
-
-@font-face {
   font-family: 'Cooper Light';
   src: url("../font/38C4BA_0_0.woff2") format("woff2"), url("../font/38C4BA_0_0.woff") format("woff"), url("../font/38C4BA_0_0.ttf") format("truetype");
   /* Safari, Android, iOS */ }
 
-h1, h2, .project-brief h3,
+@font-face {
+  font-family: 'Eckmannpsych';
+  src: url("../font/Eckmannpsych-Small.woff2") format("woff2"), url("../font/Eckmannpsych-Small.woff") format("woff"), url("../font/Eckmannpsych-Small.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: 'Degular';
+  src: url("../font/Degular-Black.woff2") format("woff2"), url("../font/Degular-Black.woff") format("woff");
+  /* Pretty Modern Browsers */
+  font-weight: 800; }
+
+@font-face {
+  font-family: 'Degular';
+  src: url("../font/Degular-Bold.woff2") format("woff2"), url("../font/Degular-Bold.woff") format("woff");
+  /* Pretty Modern Browsers */
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Degular';
+  src: url("../font/Degular-Medium.woff2") format("woff2"), url("../font/Degular-Medium.woff") format("woff");
+  /* Pretty Modern Browsers */
+  font-weight: 500; }
+
+.project-brief h3,
 footer h3,
-.archive h3 {
-  font-family: "Cooper Light", "Times New Roman", Times, serif; }
+.archive h3, .font-header {
+  font-family: "Eckmannpsych", "Times New Roman", Times, serif; }
 
 html {
-  font-family: "Beatrice Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Degular", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 .project, .portfolio .project-collage, .portfolio .project-brief, .portfolio .screens, .portfolio .row {
   margin-bottom: 80px; }
@@ -307,7 +274,6 @@ a {
   list-style-type: none; }
 
 .shadow {
-  -webkit-box-shadow: 0 -12px 36px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 0 -12px 36px 0 rgba(0, 0, 0, 0.08); }
 
 span[class*="scratch"] {
@@ -341,7 +307,7 @@ span[class*="scratch"] {
   -moz-user-select: none; }
 
 .pace-running {
-  background-color: #FFFEF9;
+  background-color: #1B1B1B;
   background-image: none; }
 
 .pace-inactive {
@@ -354,7 +320,7 @@ span[class*="scratch"] {
   opacity: 1; }
 
 .pace .pace-progress {
-  background-color: #2F2F2F;
+  background-color: #0000FF;
   position: fixed;
   z-index: 99999;
   top: 0;
@@ -367,7 +333,6 @@ span[class*="scratch"] {
   margin-left: auto;
   margin-right: auto;
   width: 95%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   .container:after {
     content: " ";
@@ -379,7 +344,6 @@ span[class*="scratch"] {
 
 .full-width-container {
   width: 100%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 @media (max-width: 767px) {
@@ -586,9 +550,9 @@ span[class*="scratch"] {
 html {
   font-weight: 400;
   font-style: normal;
-  font-size: 10px;
-  line-height: 1.5;
-  color: #2F2F2F; }
+  font-size: 20px;
+  line-height: 1.6;
+  color: #FFFEF2; }
 
 body {
   -webkit-font-smoothing: antialiased; }
@@ -720,11 +684,12 @@ p, li {
     opacity: 1; } }
 
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
+html {
+  background-color: #1B1B1B; }
+
 .animated {
-  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s; }
 
 .hide {
@@ -738,7 +703,7 @@ img {
 
 /* General styles */
 body.dark {
-  background-color: #000000; }
+  background-color: #1B1B1B; }
   body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark p, body.dark li {
     color: #F8F8F8; }
   body.dark a:link, body.dark a:visited {
@@ -751,7 +716,7 @@ body.dark {
   border: 1px solid #0000FF;
   border-radius: 5.0rem; }
   .btn:hover, .btn.active {
-    border-color: #000000; }
+    border-color: #1B1B1B; }
 
 img[class*="emoji-"] {
   display: block;
@@ -796,10 +761,9 @@ footer {
         margin-bottom: 160px; } }
   footer a:link,
   footer a:visited {
-    color: #000000; }
+    color: #1B1B1B; }
 
 .btn {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1.3rem;
   line-height: 2.4rem;
@@ -886,17 +850,7 @@ header {
     width: 120px;
     height: auto; }
 
-.homepage {
-  background: #FFFEF9 url("../img/bg-home-mobile@2x.png") repeat left top;
-  background-size: 290px 482px; }
-  @media (min-width: 768px) {
-    .homepage {
-      background: #FFFEF9 url("../img/bg@2x.png") repeat left top;
-      background-size: 1440px 1367px; } }
-
 h1, h2, h3, h4, h5, h6, p, li {
-  -webkit-transition: color 1s ease-in-out;
-  -o-transition: color 1s ease-in-out;
   transition: color 1s ease-in-out; }
 
 .scratch-year:before {
