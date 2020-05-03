@@ -4,10 +4,10 @@ h1, h2, h3, h4, h5, h6, p  {
 
 .scratch-year {
 	&:before {
-    background-image: url('../img/16@2x.png');
-    background-size: 34px 39px;
-    width: 34px;
-    height: 39px;
+    background: url('../img/16.svg') no-repeat;
+    background-size: 40.51px 46.47px;
+    width: 40.51px;
+    height: 46.47px;
 	}
 }
 

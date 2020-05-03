@@ -13,7 +13,6 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
 	margin: 0;
-	color: $darkGrey;
 	font-weight: 400;
 }
 
@@ -41,11 +40,12 @@ a {
 h1 {
 	font-size: 3rem;
 	line-height: 4.2rem;
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
 
 	@include breakpoint (baby-bear) {
-		font-size: 3.6rem;
-		line-height: 4.8rem;
+		font-size: 3rem;
+		line-height: 3.4rem;
 		margin-bottom: 4rem;
 	}
 }
@@ -73,13 +73,8 @@ footer h3,
 
 h4 {
 	font-size: 1.8rem;
-	line-height: 3rem;
+  line-height: 2.3rem;
 	margin-bottom: 2rem;
-
-	@include breakpoint (baby-bear) {
-		font-size: 2.0rem;
-		line-height: 3.2rem;
-	}
 }
 
 .intro h4 {

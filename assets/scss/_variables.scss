@@ -1,5 +1,5 @@
 // include $variables and @mixins in this file
-$corp1: #0000FF;
+$corp1: #4B1ADD;
 $corp1Light: #96D0FF;
 $lightPeach: #FFCCC9;
 $yellow: #FFFEF2;
@@ -170,8 +170,8 @@ $zheader: 20;
     left: 50px;
 
     @include breakpoint (papa-bear) {
-      bottom: 45px;
-      left: 35px;
+      bottom: 15px;
+      left: 80px;
     }
   }
 
@@ -179,10 +179,10 @@ $zheader: 20;
     content: "";
     position: absolute;
     background-image: url('../img/scribble.svg');
-    background-size: 40px 16px;
-    width: 40px;
-    height: 16px;
-    top: 10px;
-    left: 0;
+    background-size: 73.55px 29.42px;
+    width: 73.55px;
+    height: 29.42px;
+    top: 27px;
+    left: -7px;
   }
 }

@@ -289,17 +289,17 @@ span[class*="scratch"] {
     left: 50px; }
     @media (min-width: 1100px) {
       span[class*="scratch"]:before {
-        bottom: 45px;
-        left: 35px; } }
+        bottom: 15px;
+        left: 80px; } }
   span[class*="scratch"]:after {
     content: "";
     position: absolute;
     background-image: url("../img/scribble.svg");
-    background-size: 40px 16px;
-    width: 40px;
-    height: 16px;
-    top: 10px;
-    left: 0; }
+    background-size: 73.55px 29.42px;
+    width: 73.55px;
+    height: 29.42px;
+    top: 27px;
+    left: -7px; }
 
 .pace {
   -webkit-pointer-events: none;
@@ -320,7 +320,7 @@ span[class*="scratch"] {
   opacity: 1; }
 
 .pace .pace-progress {
-  background-color: #0000FF;
+  background-color: #4B1ADD;
   position: fixed;
   z-index: 99999;
   top: 0;
@@ -357,7 +357,7 @@ span[class*="scratch"] {
   margin-right: 3.74999%; }
   @media (min-width: 768px) {
     .narrow-container {
-      width: 47.50001%;
+      width: 55.83334%;
       float: left;
       margin-left: 26.25%;
       margin-right: -100%; } }
@@ -559,7 +559,6 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, li, ul, li {
   margin: 0;
-  color: #2F2F2F;
   font-weight: 400; }
 
 a {
@@ -570,18 +569,19 @@ a {
   a:focus {
     outline: 0; }
   a:link, a:visited {
-    color: #0000FF; }
+    color: #4B1ADD; }
   a:hover, a:active {
     color: #2F2F2F; }
 
 h1 {
   font-size: 3rem;
   line-height: 4.2rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  font-weight: 900; }
   @media (min-width: 768px) {
     h1 {
-      font-size: 3.6rem;
-      line-height: 4.8rem;
+      font-size: 3rem;
+      line-height: 3.4rem;
       margin-bottom: 4rem; } }
 
 h2 {
@@ -598,12 +598,8 @@ h3 {
 
 h4 {
   font-size: 1.8rem;
-  line-height: 3rem;
+  line-height: 2.3rem;
   margin-bottom: 2rem; }
-  @media (min-width: 768px) {
-    h4 {
-      font-size: 2.0rem;
-      line-height: 3.2rem; } }
 
 .intro h4 {
   margin-bottom: 3rem; }
@@ -713,7 +709,7 @@ body.dark {
 
 .btn {
   display: inline-block;
-  border: 1px solid #0000FF;
+  border: 1px solid #4B1ADD;
   border-radius: 5.0rem; }
   .btn:hover, .btn.active {
     border-color: #1B1B1B; }
@@ -786,8 +782,8 @@ footer {
 
 .btn-solid:link, .btn-solid:visited {
   color: #F8F8F8 !important;
-  background-color: #0000FF;
-  border: 1px solid #0000FF; }
+  background-color: #4B1ADD;
+  border: 1px solid #4B1ADD; }
 
 .btn-solid:hover, .btn-solid:active {
   color: #F8F8F8 !important;
@@ -801,8 +797,8 @@ footer {
 
 .btn-solid-dark:hover, .btn-solid-dark:active {
   color: #F8F8F8 !important;
-  background-color: #0000FF;
-  border: 1px solid #0000FF; }
+  background-color: #4B1ADD;
+  border: 1px solid #4B1ADD; }
 
 .blob-1 {
   position: absolute;
@@ -858,10 +854,10 @@ h1, h2, h3, h4, h5, h6, p, li {
   transition: color 1s ease-in-out; }
 
 .scratch-year:before {
-  background-image: url("../img/16@2x.png");
-  background-size: 34px 39px;
-  width: 34px;
-  height: 39px; }
+  background: url("../img/16.svg") no-repeat;
+  background-size: 40.51px 46.47px;
+  width: 40.51px;
+  height: 46.47px; }
 
 .intro {
   position: relative; }

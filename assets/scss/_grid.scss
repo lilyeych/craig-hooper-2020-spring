@@ -39,7 +39,7 @@ $susy: (
 	margin-right: 3.74999%;
 
 	@include breakpoint (baby-bear) {
-		@include span(6 at 4 isolate);
+		@include span(7 at 4 isolate);
 	}
 }
 
