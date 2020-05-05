@@ -562,7 +562,7 @@ h1, h2, h3, h4, h5, h6, p, li, ul, li {
   font-weight: 400; }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   /* For some androids */ }
@@ -582,7 +582,7 @@ h1 {
     h1 {
       font-size: 3rem;
       line-height: 3.4rem;
-      margin-bottom: 4rem; } }
+      margin-bottom: 1.6rem; } }
 
 h2 {
   font-size: 3.4rem;
@@ -599,13 +599,7 @@ h3 {
 h4 {
   font-size: 1.8rem;
   line-height: 2.3rem;
-  margin-bottom: 2rem; }
-
-.intro h4 {
-  margin-bottom: 3rem; }
-  @media (min-width: 768px) {
-    .intro h4 {
-      margin-bottom: 4rem; } }
+  margin-bottom: 1.6rem; }
 
 h5 {
   font-size: 1.4rem;
@@ -617,12 +611,12 @@ h6 {
 
 p, li {
   font-size: 1.5rem;
-  line-height: 2.7rem;
+  line-height: 2.1rem;
   margin-bottom: 3.0rem; }
   @media (min-width: 768px) {
     p, li {
-      font-size: 1.6rem;
-      line-height: 2.8rem; } }
+      font-size: 1.5rem;
+      line-height: 2.1rem; } }
 
 .credit {
   font-size: 1.4rem;
@@ -631,6 +625,11 @@ p, li {
     .credit {
       font-size: 1.5rem;
       line-height: 2.6rem; } }
+
+.tag {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 0; }
 
 .animated, .fadeInUp {
   -webkit-animation-duration: 1s;
@@ -732,7 +731,7 @@ img[class*="emoji-"] {
   margin: 0 auto 6px auto;
   width: 20px;
   height: 1px;
-  background-color: #636363; }
+  background-color: #858585; }
 
 .pace-container {
   overflow: hidden; }
@@ -748,7 +747,7 @@ footer {
   footer .btn {
     margin-bottom: 80px; }
   footer p, footer li {
-    color: #636363;
+    color: #858585;
     margin-bottom: 0; }
   footer h3 {
     margin-bottom: 80px; }
@@ -839,16 +838,20 @@ footer {
 header {
   margin-top: 60px;
   margin-bottom: 60px;
-  text-align: center; }
+  text-align: left; }
   @media (min-width: 768px) {
     header {
-      margin-top: 120px;
-      margin-bottom: 80px; } }
+      margin-top: 128px;
+      margin-bottom: 16px; } }
   header .avatar {
     display: block;
-    margin: 0 auto;
-    width: 120px;
-    height: auto; }
+    width: 70px;
+    height: auto;
+    margin-bottom: 16px; }
+    header .avatar img {
+      border-radius: 50%; }
+  header .tag {
+    color: #858585; }
 
 h1, h2, h3, h4, h5, h6, p, li {
   transition: color 1s ease-in-out; }
@@ -981,7 +984,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 .archive {
   background-color: #FFFEF9; }
   .archive h6 {
-    color: #636363; }
+    color: #858585; }
   .archive .project {
     width: 100%;
     margin-bottom: 6.0rem; }
