@@ -5,9 +5,15 @@ h1, h2, h3, h4, h5, h6, p  {
 .scratch-year {
 	&:before {
     background: url('../img/16.svg') no-repeat;
-    background-size: 40.51px 46.47px;
-    width: 40.51px;
-    height: 46.47px;
+    background-size: 24px 27px;
+    width: 24px;
+		height: 27px;
+
+		@include breakpoint (baby-bear) {
+			background-size: 40.51px 46.47px;
+			width: 40.51px;
+			height: 46.47px;
+		}
 	}
 }
 
@@ -18,19 +24,43 @@ h1, h2, h3, h4, h5, h6, p  {
 		top: 150px;
 		z-index: -1;
 		left: -20px;
-
+ 
 		@include breakpoint (baby-bear) {
 			top: 0;
-			left: -200px;
+			left: -192px;
+		}
+	}
+}
+
+.social-icons {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+	li {
+		display: inline-block;
+		margin: 0 15px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		img {
+			width: 24px;
+			height: 24px;
 		}
 	}
 }
 
 .craigs {
-	margin-bottom: 200px;
+	margin-bottom: 192px;
+
+	img {
+		border-radius: 6px;
+	}
 
 	@include breakpoint (max-tiny-bear) {
-		margin-bottom: 110px;
+		margin-bottom: 96px;
 
 		.craig-1,
 		.craig-3 {
@@ -123,34 +153,44 @@ h1, h2, h3, h4, h5, h6, p  {
 	}
 }
 
+.project-images {
+	img {
+		border-radius: 6px;
+	}
+}
+
 .project-description {
+	margin-top: 24px;
 	text-align: left;
-	margin-top: 30px;
-	margin-bottom: 30px;
 
 	@include breakpoint (tiny-bear) {
-		margin-top: 30px;
-		margin-bottom: 40px;
+		margin-top: 32px;
 	}
 
 	a {
-		&:link,
-		&:visited {
-			color: $darkGrey;
-		}
-
-		&:hover,
-		&:active {
-			// color: $corp1;
-		}
+		color: $yellow;
+		text-decoration: none;
 	}
 
 	.date {
-		margin-bottom: 12px;
+		color: $grey;
+
+		@include breakpoint (tiny-bear) {
+			margin-bottom: 8px;
+		}
 	}
 
 	.title {
-		margin-bottom: 20px;
+		margin-bottom: 12px;
+		font-weight: bold;
+
+		@include breakpoint (baby-bear) {
+			margin-bottom: 16px;
+		}
+	}
+
+	p {
+		margin-bottom: 0;
 	}
 }
 .animated {

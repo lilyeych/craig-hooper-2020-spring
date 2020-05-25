@@ -102,7 +102,7 @@ $zheader: 20;
   margin-bottom: 80px;
 
   @include breakpoint (baby-bear) {
-    margin-bottom: 200px;
+    margin-bottom: 192px;
   }
 }
 
@@ -110,7 +110,7 @@ $zheader: 20;
   margin-bottom: 30px;
 
   @include breakpoint (baby-bear) {
-    margin-bottom: 80px;
+    margin-bottom: 64px;
   }
 }
 
@@ -156,6 +156,7 @@ $zheader: 20;
 }
 
 %scratch {
+  display: inline-block;
   position: relative;
   margin-right: 60px;
 
@@ -166,8 +167,8 @@ $zheader: 20;
   &:before {
     content: "";
     position: absolute;
-    bottom: -5px;
-    left: 50px;
+    bottom: 3px;
+    left: 60px;
 
     @include breakpoint (papa-bear) {
       bottom: 15px;
@@ -179,10 +180,18 @@ $zheader: 20;
     content: "";
     position: absolute;
     background-image: url('../img/scribble.svg');
-    background-size: 73.55px 29.42px;
-    width: 73.55px;
-    height: 29.42px;
-    top: 27px;
+    background-size: 60px 16px;
+    width: 60px;
+    height: 16px;
+    top: 14px;
     left: -7px;
+
+    @include breakpoint (baby-bear) {
+      background-size: 73.55px 29.42px;
+      width: 73.55px;
+      height: 29.42px;
+      top: 27px;
+      left: -7px;
+    }
   }
 }

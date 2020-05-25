@@ -1,5 +1,9 @@
 .portfolio {
-	background-color: #FFFEF9;
+
+	header {
+		margin-top: 48px;
+		margin-bottom: 144px;
+	}
 
 	.project-detail {
 		margin-bottom: 0;
@@ -24,7 +28,8 @@
 		@extend %vspacing;
 
 		.title {
-			margin-bottom: 20px;
+			margin-bottom: 18px;
+			font-weight: bold;
 		}
 	}
 

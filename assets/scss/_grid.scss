@@ -149,7 +149,7 @@ $susy: (
 		@include span(4 of 4);
 
 		@include breakpoint (baby-bear) {
-			@include span(5 at 2 isolate);
+			@include span(5 at 3 isolate);
 		}
 	}
 
@@ -157,7 +157,7 @@ $susy: (
 		@include span(4 of 4);
 
 		@include breakpoint (baby-bear) {
-			@include span(5 at 7 isolate);
+			@include span(5 at 6 isolate);
 		}
 	}
 
