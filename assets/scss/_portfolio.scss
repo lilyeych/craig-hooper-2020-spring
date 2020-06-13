@@ -1,8 +1,11 @@
 .portfolio {
 
 	header {
-		margin-top: 48px;
-		margin-bottom: 144px;
+    margin: 24px 10px 8px 10px;
+    
+    @include breakpoint (baby-bear) {
+      margin-bottom: 144px;
+    }
 	}
 
 	.project-detail {

@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, p  {
 		left: -20px;
  
 		@include breakpoint (baby-bear) {
-			top: 0;
+			top: 320px;
 			left: -192px;
 		}
 	}
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6, p  {
 
 	.title {
 		margin-bottom: 12px;
-		font-weight: bold;
+		font-weight: 600;
 
 		@include breakpoint (baby-bear) {
 			margin-bottom: 16px;

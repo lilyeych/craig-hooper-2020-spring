@@ -277,7 +277,7 @@ a {
 span[class*="scratch"] {
   display: inline-block;
   position: relative;
-  margin-right: 60px; }
+  margin-right: 50px; }
   @media (min-width: 1100px) {
     span[class*="scratch"] {
       margin-right: 0px; } }
@@ -285,7 +285,7 @@ span[class*="scratch"] {
     content: "";
     position: absolute;
     bottom: 3px;
-    left: 60px; }
+    left: 50px; }
     @media (min-width: 1100px) {
       span[class*="scratch"]:before {
         bottom: 15px;
@@ -556,11 +556,14 @@ span[class*="scratch"] {
 html {
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 62.5%;
   line-height: 1.6;
   color: #FFFEF2; }
 
 body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, h6, p, li, ul, li {
@@ -580,75 +583,87 @@ a {
     color: #FFFEF2; }
 
 h1 {
-  font-size: 1.8rem;
-  line-height: 2.1rem;
-  margin-bottom: 1.2rem;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  margin-bottom: 2.42rem;
   font-weight: 900; }
   @media (min-width: 768px) {
     h1 {
-      font-size: 3rem;
-      line-height: 3.4rem;
-      margin-bottom: 1.6rem; } }
+      font-size: 6rem;
+      line-height: 6.8rem;
+      margin-bottom: 3.2rem; } }
 
 h2 {
-  font-size: 1.2rem;
-  line-height: 1.7rem; }
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 2.4rem; }
   @media (min-width: 768px) {
     h2 {
-      font-size: 1.8rem;
-      line-height: 2.3rem; } }
+      font-size: 3.6rem;
+      line-height: 4.6rem; } }
 
 h3 {
-  font-size: 1.5rem;
-  line-height: 2.1rem; }
+  font-size: 2rem;
+  line-height: 2.8rem; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 3rem;
+      line-height: 4.2rem; } }
 
 h4 {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  margin-bottom: 1.2rem; }
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 2.4rem; }
   @media (min-width: 768px) {
     h4 {
-      font-size: 1.5rem;
-      line-height: 2.1rem;
-      margin-bottom: 1.6rem; } }
+      font-size: 3rem;
+      line-height: 4.2rem;
+      margin-bottom: 3.2rem; } }
 
 h5 {
-  font-size: 0.9rem;
-  line-height: 1.5rem; }
+  font-size: 1.6rem;
+  line-height: 3rem; }
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 1.8rem; } }
 
 h6 {
-  font-size: 1.4rem;
-  line-height: 3.0rem; }
+  font-size: 2.8rem;
+  line-height: 6rem; }
 
 p, li {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  margin-bottom: 1.6rem; }
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  margin-bottom: 3.2rem; }
   @media (min-width: 768px) {
     p, li {
-      font-size: 1rem;
-      line-height: 1.6rem; } }
+      font-size: 2rem;
+      line-height: 3.2rem; } }
 
 .homepage .intro p, .homepage .intro li {
-  font-size: 1rem;
-  line-height: 1.6rem;
-  margin-bottom: 1.2rem; }
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin-bottom: 2.4rem; }
   @media (min-width: 768px) {
     .homepage .intro p, .homepage .intro li {
-      font-size: 1.5rem;
-      line-height: 2.1rem; } }
+      font-size: 3rem;
+      line-height: 4.2rem; } }
 
 .credit {
-  font-size: 1.4rem;
-  line-height: 2.6rem; }
+  font-size: 2.8rem;
+  line-height: 5.2rem; }
   @media (min-width: 768px) {
     .credit {
-      font-size: 1.5rem;
-      line-height: 2.6rem; } }
+      font-size: 3rem;
+      line-height: 5.4rem; } }
+
+.font-header {
+  padding: 0 0.5rem;
+  font-weight: 400; }
 
 .tag {
-  font-size: 0.9rem;
-  line-height: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
   margin-bottom: 0; }
 
 .animated, .fadeInUp {
@@ -896,7 +911,7 @@ h1, h2, h3, h4, h5, h6, p, li {
     left: -20px; }
     @media (min-width: 768px) {
       .intro [class*="blob"] {
-        top: 0;
+        top: 320px;
         left: -192px; } }
 
 .social-icons {
@@ -993,7 +1008,7 @@ h1, h2, h3, h4, h5, h6, p, li {
         margin-bottom: 8px; } }
   .project-description .title {
     margin-bottom: 12px;
-    font-weight: bold; }
+    font-weight: 600; }
     @media (min-width: 768px) {
       .project-description .title {
         margin-bottom: 16px; } }
@@ -1004,8 +1019,10 @@ h1, h2, h3, h4, h5, h6, p, li {
   opacity: 0; }
 
 .portfolio header {
-  margin-top: 48px;
-  margin-bottom: 144px; }
+  margin: 24px 10px 8px 10px; }
+  @media (min-width: 768px) {
+    .portfolio header {
+      margin-bottom: 144px; } }
 
 .portfolio .project-detail {
   margin-bottom: 0; }
