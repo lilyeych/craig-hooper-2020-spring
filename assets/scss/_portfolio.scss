@@ -6,6 +6,14 @@
     @include breakpoint (baby-bear) {
       margin-bottom: 144px;
     }
+
+    .avatar {
+      transition: all 0.1s;
+
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
 	}
 
 	.project-detail {
@@ -15,7 +23,7 @@
 	.project-collage {
 		@extend %vspacing;
 
-		img {
+		.collages {
 			position: relative;
 			width: 130%;
 			max-width: 130%;
@@ -25,7 +33,24 @@
 				max-width: 1770px;
 			}
 		}
-	}
+  }
+
+  .collage-blob {
+    position: relative;
+
+    [class*="blob"] {
+      top: 150px;
+      z-index: -1;
+      left: -20px;
+   
+      @include breakpoint (baby-bear) {
+        top: -400px;
+        left: 100px;
+      }
+    }
+  }
+  
+  
 
 	.project-brief {
 		@extend %vspacing;
@@ -38,7 +63,22 @@
 
 	.screens {
 		@extend %vspacing;
-	}
+  }
+  
+  .browser-portfolio-img {
+    position: relative;
+
+    [class*="blob"] {
+      bottom: 600px;
+      right: -185px;
+      z-index: -1;
+  
+      @include breakpoint (baby-bear) {
+        top: 1600px;
+        
+      }
+    }
+  }
 
 	// .browser-bg {
 	// 	background-color: #ededed;
@@ -76,13 +116,19 @@
 	}
 
 	.browser-row {
-		@extend %browserspacing;
+    @extend %vspacing;
+
+    img {
+      @extend %browserspacing;
+    }
 	}
 
 
-	.project-image-small img {
-		@extend %browserspacing;
-	}
+	.project-image-small {
+    img {
+      @extend %browserspacing;
+    }
+  }
 
 	.portfolio-img-end {
 		margin-bottom: 50px;

@@ -14,13 +14,6 @@ $zcontent: 10;
 $zheader: 20;
 
 @font-face {
-  font-family: 'Cooper Light';
-  src: url('../font/38C4BA_0_0.woff2') format('woff2'),
-       url('../font/38C4BA_0_0.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/38C4BA_0_0.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-
-@font-face {
   font-family: 'Eckmannpsych';
   src: url('../font/Eckmannpsych-Small.woff2') format('woff2'),
        url('../font/Eckmannpsych-Small.woff') format('woff'), /* Pretty Modern Browsers */
