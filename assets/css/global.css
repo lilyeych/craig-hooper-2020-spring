@@ -1115,12 +1115,12 @@ h1, h2, h3, h4, h5, h6, p, li {
 .portfolio .project-detail {
   margin-bottom: 0; }
 
-.portfolio .project-collage .collages {
+.portfolio .project-collage img {
   position: relative;
   width: 130%;
   max-width: 130%; }
   @media (min-width: 768px) {
-    .portfolio .project-collage .collages {
+    .portfolio .project-collage img {
       width: 1770px;
       max-width: 1770px; } }
 
