@@ -239,10 +239,10 @@ body {
 html, .btn, footer .type-link {
   font-family: "Degular", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-.project, .portfolio .project-collage, .portfolio .project-brief, .portfolio .screens, .portfolio .row, .portfolio .browser-row {
+.project, .portfolio .project-collage, .portfolio .project-brief, .portfolio .screens, .portfolio .row {
   margin-bottom: 80px; }
   @media (min-width: 768px) {
-    .project, .portfolio .project-collage, .portfolio .project-brief, .portfolio .screens, .portfolio .row, .portfolio .browser-row {
+    .project, .portfolio .project-collage, .portfolio .project-brief, .portfolio .screens, .portfolio .row {
       margin-bottom: 192px; } }
 
 .portfolio .browser-row img, .portfolio .project-image-small img {
@@ -361,6 +361,18 @@ span[class*="scratch"] {
       width: 55.83334%;
       float: left;
       margin-left: 26.25%;
+      margin-right: -100%; } }
+
+.medium-container {
+  width: 92.50002%;
+  float: left;
+  margin-left: 3.74999%;
+  margin-right: 3.74999%; }
+  @media (min-width: 768px) {
+    .medium-container {
+      width: 64.16667%;
+      float: left;
+      margin-left: 17.91666%;
       margin-right: -100%; } }
 
 .craig-1 {
@@ -635,12 +647,16 @@ p, li {
       font-size: 2rem;
       line-height: 3.2rem; } }
 
-.homepage .intro p, .homepage .intro li {
+.homepage .intro p, .homepage .intro li,
+.archive .intro p,
+.archive .intro li {
   font-size: 2rem;
   line-height: 3.2rem;
   margin-bottom: 2.4rem; }
   @media (min-width: 768px) {
-    .homepage .intro p, .homepage .intro li {
+    .homepage .intro p, .homepage .intro li,
+    .archive .intro p,
+    .archive .intro li {
       font-size: 3rem;
       line-height: 4.2rem; } }
 
@@ -710,6 +726,37 @@ p, li {
 
 .fadeInUp {
   animation-name: fadeInUp; }
+
+@-webkit-keyframes spin /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.spin {
+  -webkit-animation: spin 0.25s linear infinite;
+  -moz-animation: spin 0.25s linear infinite;
+  -ms-animation: spin 0.25s linear infinite;
+  -o-animation: spin 0.25s linear infinite;
+  animation: spin 0.25s linear infinite; }
 
 html {
   background-color: #1B1B1B; }
@@ -1061,8 +1108,9 @@ h1, h2, h3, h4, h5, h6, p, li {
       margin-bottom: 144px; } }
   .portfolio header .avatar {
     transition: all 0.1s; }
-    .portfolio header .avatar:hover {
-      transform: rotate(180deg); }
+    @media (min-width: 768px) {
+      .portfolio header .avatar:hover {
+        animation: spin 0.25s linear infinite; } }
 
 .portfolio .project-detail {
   margin-bottom: 0; }

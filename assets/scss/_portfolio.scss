@@ -11,7 +11,9 @@
       transition: all 0.1s;
 
       &:hover {
-        transform: rotate(180deg);
+				@include breakpoint (baby-bear) {
+					animation: spin 0.25s linear infinite;
+				}
       }
     }
 	}
@@ -116,7 +118,7 @@
 	}
 
 	.browser-row {
-    @extend %vspacing;
+    // @extend %vspacing;
 
     img {
       @extend %browserspacing;

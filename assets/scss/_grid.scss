@@ -43,6 +43,17 @@ $susy: (
 	}
 }
 
+.medium-container {
+	width: 92.50002%;
+	float: left;
+	margin-left: 3.74999%;
+	margin-right: 3.74999%;
+
+	@include breakpoint (baby-bear) {
+		@include span(8 at 3 isolate);
+	}
+}
+
 // homepage Craigs
 .craig-1 {
 	@include span(2);
