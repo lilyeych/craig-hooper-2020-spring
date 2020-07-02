@@ -16,11 +16,22 @@ function bgChange() {
 }
 
 function animated() {
-	console.log("ss");
 	window.requestAnimationFrame(function() {
 		$(".animated").waypoint(function() {
 			$(this.element).addClass($(this.element).data('animated'));
 		}, { offset: '80%' });
+	});
+}
+
+function masonry() {
+	var $projectList = $('.project-list').masonry({
+		itemSelector: '.project',
+		transitionDuration: '0s',
+		horizontalOrder: true
+	});
+
+	$projectList.imagesLoaded().progress( function() {
+		$projectList.masonry('layout');
 	});
 }
 
@@ -85,8 +96,7 @@ function parallax() {
   // media query change
   // function WidthChange(mq) {
   //   if (mq.matches) {
-		$('.parallax').paroller()
-      // $(".parallax").paroller({ factor: 0.05, factorXs: 0.05, factorSm: 0.15, type: 'foreground'});
+      $(".parallax").paroller({ factor: 0.05, factorXs: 0.05, factorSm: 0.15, type: 'foreground'});
     // } else {
     //   $(".parallax").paroller({ factor: 0, type: 'foreground'});
     // }
@@ -98,6 +108,8 @@ $(function() {
 	BGColor();
 	picture();
 	animated();
+	// bgChange();
+	masonry();
 	scroll();
   parallax();
 
