@@ -1196,7 +1196,7 @@ h1, h2, h3, h4, h5, h6, p, li {
       margin-bottom: 8.0rem; } }
   .archive .project-description [class*="blob"] {
     top: 50px;
-    right: -185px;
+    left: -120px;
     z-index: -1; }
     @media (min-width: 768px) {
       .archive .project-description [class*="blob"] {
