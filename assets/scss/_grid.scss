@@ -186,7 +186,8 @@ $susy: (
 }
 
 .browser-portfolio-img,
-.project-image-large {
+.project-image-large,
+.archive .project-description {
 	@include span(4 of 4);
 
 	@include breakpoint (baby-bear) {

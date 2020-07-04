@@ -71,13 +71,12 @@
     position: relative;
 
     [class*="blob"] {
-      bottom: 600px;
+      top: 300px;
       right: -185px;
       z-index: -1;
   
       @include breakpoint (baby-bear) {
         top: 1600px;
-        
       }
     }
   }

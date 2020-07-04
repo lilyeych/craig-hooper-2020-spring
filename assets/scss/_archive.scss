@@ -7,6 +7,15 @@
 }
 
 .archive {
+  .intro {
+    [class*="blob"] {
+      top: 100px;
+   
+      @include breakpoint (baby-bear) {
+        top: 100px;
+      }
+    }
+  }
 
   h6 {
     color: $grey;
@@ -21,18 +30,60 @@
   }
 
   .project-description {
-    text-align: center;
+    position: relative;
+    text-align: left;
     margin-top: 0rem;
     margin-bottom: 5.0rem;
     @include breakpoint (baby-bear) {
       margin-bottom: 8.0rem;
     }
+
+    [class*="blob"] {
+      top: 50px;
+      right: -185px;
+      z-index: -1;
+  
+      @include breakpoint (baby-bear) {
+        top: 300px;
+      }
+    }
   }
 
-  .project-image-large img {
-    width: auto;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  .project-image-large {
+    position: relative;
+
+    img {
+      width: auto;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    [class*="blob"] {
+      top: 50px;
+      left: auto;
+      right: -20px;
+      z-index: -1;
+  
+      @include breakpoint (baby-bear) {
+        right: -200px;
+      }
+    }
+  }
+    
+
+  .project-image-small {
+    position: relative;
+
+    [class*="blob"] {
+      top: 1400px;
+      left: auto;
+      right: -100px;
+      z-index: -1;
+  
+      @include breakpoint (baby-bear) {
+        top: 820px;
+      }
+    }
   }
 }

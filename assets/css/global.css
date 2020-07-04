@@ -477,14 +477,16 @@ span[class*="scratch"] {
   margin-right: 3.74999%; }
 
 .browser-portfolio-img,
-.project-image-large {
+.project-image-large,
+.archive .project-description {
   width: 92.50002%;
   float: left;
   margin-left: 3.74999%;
   margin-right: 3.74999%; }
   @media (min-width: 768px) {
     .browser-portfolio-img,
-    .project-image-large {
+    .project-image-large,
+    .archive .project-description {
       width: 80.83334%;
       float: left;
       margin-left: 1.25%;
@@ -834,10 +836,12 @@ footer {
     footer a:link, footer a:visited {
       color: #FFFEF2; }
   footer .type-link {
-    position: absolute;
-    right: 30px;
-    bottom: 5px;
     color: #858585; }
+    @media (min-width: 768px) {
+      footer .type-link {
+        position: absolute;
+        right: 30px;
+        bottom: 5px; } }
     footer .type-link .copy {
       margin-right: 5px; }
     footer .type-link img {
@@ -891,8 +895,8 @@ footer {
 .blob-1 {
   position: absolute;
   display: block;
-  width: 170px;
-  height: 132px;
+  width: 170px !important;
+  height: 132px !important;
   -webkit-transition: .15s ease-in-out;
   -moz-transition: .15s ease-in-out;
   -o-transition: .15s ease-in-out;
@@ -903,14 +907,14 @@ footer {
   transition-property: background-position; }
   @media (min-width: 768px) {
     .blob-1 {
-      width: 270px;
-      height: 211px; } }
+      width: 270px !important;
+      height: 211px !important; } }
 
 .blob-2 {
   position: absolute;
   display: block;
-  width: 270px;
-  height: 141px;
+  width: 270px !important;
+  height: 141px !important;
   -webkit-transition: .15s ease-in-out;
   -moz-transition: .15s ease-in-out;
   -o-transition: .15s ease-in-out;
@@ -921,14 +925,14 @@ footer {
   transition-property: background-position; }
   @media (min-width: 768px) {
     .blob-2 {
-      width: 370px;
-      height: 194px; } }
+      width: 370px !important;
+      height: 194px !important; } }
 
 .blob-3 {
   position: absolute;
   display: block;
-  width: 270px;
-  height: 210px;
+  width: 270px !important;
+  height: 210px !important;
   -webkit-transition: .15s ease-in-out;
   -moz-transition: .15s ease-in-out;
   -o-transition: .15s ease-in-out;
@@ -939,8 +943,8 @@ footer {
   transition-property: background-position; }
   @media (min-width: 768px) {
     .blob-3 {
-      width: 270px;
-      height: 210px; } }
+      width: 270px !important;
+      height: 210px !important; } }
 
 header {
   margin-top: 32px;
@@ -1142,7 +1146,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 .portfolio .browser-portfolio-img {
   position: relative; }
   .portfolio .browser-portfolio-img [class*="blob"] {
-    bottom: 600px;
+    top: 300px;
     right: -185px;
     z-index: -1; }
     @media (min-width: 768px) {
@@ -1166,6 +1170,12 @@ h1, h2, h3, h4, h5, h6, p, li {
     .project-image-small img {
       margin-bottom: 6.0rem; } }
 
+.archive .intro [class*="blob"] {
+  top: 100px; }
+  @media (min-width: 768px) {
+    .archive .intro [class*="blob"] {
+      top: 100px; } }
+
 .archive h6 {
   color: #858585; }
 
@@ -1177,15 +1187,44 @@ h1, h2, h3, h4, h5, h6, p, li {
       margin-bottom: 11.0rem; } }
 
 .archive .project-description {
-  text-align: center;
+  position: relative;
+  text-align: left;
   margin-top: 0rem;
   margin-bottom: 5.0rem; }
   @media (min-width: 768px) {
     .archive .project-description {
       margin-bottom: 8.0rem; } }
+  .archive .project-description [class*="blob"] {
+    top: 50px;
+    right: -185px;
+    z-index: -1; }
+    @media (min-width: 768px) {
+      .archive .project-description [class*="blob"] {
+        top: 300px; } }
 
-.archive .project-image-large img {
-  width: auto;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+.archive .project-image-large {
+  position: relative; }
+  .archive .project-image-large img {
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .archive .project-image-large [class*="blob"] {
+    top: 50px;
+    left: auto;
+    right: -20px;
+    z-index: -1; }
+    @media (min-width: 768px) {
+      .archive .project-image-large [class*="blob"] {
+        right: -200px; } }
+
+.archive .project-image-small {
+  position: relative; }
+  .archive .project-image-small [class*="blob"] {
+    top: 1400px;
+    left: auto;
+    right: -100px;
+    z-index: -1; }
+    @media (min-width: 768px) {
+      .archive .project-image-small [class*="blob"] {
+        top: 820px; } }
