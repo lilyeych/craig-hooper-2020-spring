@@ -76,8 +76,7 @@ h1, h2, h3, h4, h5, h6, p  {
 	}
 
 	.craig-2 {
-    position: relative;
-    
+		position: relative;
     &:after {
       position: absolute;
       display: block;
@@ -90,9 +89,13 @@ h1, h2, h3, h4, h5, h6, p  {
       background-size: 100% 100%;
     }
 
-    &:hover:after {
-      display: none;
-    }
+		&:hover,
+		&:active,
+		&:focus {
+			&:after {
+				display: none;
+			}
+		}
 
 		[class*="blob"] {
 			bottom: -120px;

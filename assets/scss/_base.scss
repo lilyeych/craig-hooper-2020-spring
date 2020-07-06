@@ -135,17 +135,23 @@ footer {
   }
   
   .type-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 24px;
     @extend %font-body;
 		color: $grey;
 		
 		@include breakpoint (baby-bear) {
 			position: absolute;
 			right: 30px;
-			bottom: 5px;
+			bottom: 2px;
+			margin-bottom: 0;
 		}
 
     .copy {
-      margin-right: 5px;
+			margin-right: 5px;
+			margin-bottom: 7px;
     }
   
     img {
@@ -220,6 +226,13 @@ footer {
 		color: $yellow !important;
 		background-color: $corp1;
 		border: 1px solid $corp1;
+	}
+}
+
+[class*="blob"] {
+	display: none!important;
+	@include breakpoint (baby-bear) {
+		display: block!important;
 	}
 }
 

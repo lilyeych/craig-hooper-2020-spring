@@ -33,9 +33,10 @@
     position: relative;
     text-align: left;
     margin-top: 0rem;
-    margin-bottom: 5.0rem; 
-    @include breakpoint (baby-bear) {
-      margin-bottom: 8.0rem;
+    margin-bottom: 3.2rem; 
+
+    .eyebrow {
+      color: $grey;
     }
 
     [class*="blob"] {

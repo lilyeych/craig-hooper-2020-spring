@@ -216,6 +216,12 @@ body {
   /* Safari, Android, iOS */ }
 
 @font-face {
+  font-family: 'Pilowlava';
+  src: url("../font/Pilowlava-RegularA9.eot");
+  src: url("../font/Pilowlava-RegularA9.woff2") format("woff2"), url("../font/Pilowlava-RegularA9.woff") format("woff");
+  /* Pretty Modern Browsers */ }
+
+@font-face {
   font-family: 'Degular';
   src: url("../font/Degular-Black.woff2") format("woff2"), url("../font/Degular-Black.woff") format("woff");
   /* Pretty Modern Browsers */
@@ -234,15 +240,17 @@ body {
   font-weight: 500; }
 
 .font-header, footer a {
-  font-family: "Eckmannpsych", "Times New Roman", Times, serif; }
+  font-family: "Pilowlava", "Times New Roman", Times, serif; }
 
 html, .btn, footer .type-link {
   font-family: "Degular", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-.project, .portfolio .project-collage, .portfolio .project-brief, .portfolio .screens, .portfolio .row {
+.vspacing, .project, .portfolio .project-collage, .portfolio .project-brief, .portfolio .screens, .portfolio .browsers > div:last-child img:last-child,
+.portfolio .browser-row > div:last-child img:last-child, .portfolio .row {
   margin-bottom: 80px; }
   @media (min-width: 768px) {
-    .project, .portfolio .project-collage, .portfolio .project-brief, .portfolio .screens, .portfolio .row {
+    .vspacing, .project, .portfolio .project-collage, .portfolio .project-brief, .portfolio .screens, .portfolio .browsers > div:last-child img:last-child,
+    .portfolio .browser-row > div:last-child img:last-child, .portfolio .row {
       margin-bottom: 192px; } }
 
 .portfolio .browser-row img, .portfolio .project-image-small img {
@@ -299,7 +307,7 @@ span[class*="scratch"] {
         background-size: 73.55px 29.42px;
         width: 73.55px;
         height: 29.42px;
-        top: 27px;
+        top: 23px;
         left: -7px; } }
 
 .pace {
@@ -836,14 +844,20 @@ footer {
     footer a:link, footer a:visited {
       color: #FFFEF2; }
   footer .type-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
     color: #858585; }
     @media (min-width: 768px) {
       footer .type-link {
         position: absolute;
         right: 30px;
-        bottom: 5px; } }
+        bottom: 2px;
+        margin-bottom: 0; } }
     footer .type-link .copy {
-      margin-right: 5px; }
+      margin-right: 5px;
+      margin-bottom: 7px; }
     footer .type-link img {
       width: 36px;
       display: inline-block; }
@@ -891,6 +905,12 @@ footer {
   color: #FFFEF2 !important;
   background-color: #4B1ADD;
   border: 1px solid #4B1ADD; }
+
+[class*="blob"] {
+  display: none !important; }
+  @media (min-width: 768px) {
+    [class*="blob"] {
+      display: block !important; } }
 
 .blob-1 {
   position: absolute;
@@ -1029,7 +1049,7 @@ h1, h2, h3, h4, h5, h6, p, li {
       content: '';
       background: url("../img/dot.svg") no-repeat;
       background-size: 100% 100%; }
-    .craigs .craig-2:hover:after {
+    .craigs .craig-2:hover:after, .craigs .craig-2:active:after, .craigs .craig-2:focus:after {
       display: none; }
     .craigs .craig-2 [class*="blob"] {
       bottom: -120px;
@@ -1106,7 +1126,7 @@ h1, h2, h3, h4, h5, h6, p, li {
   opacity: 0; }
 
 .portfolio header {
-  margin: 24px 10px 8px 10px; }
+  margin: 45px 10px 8px 10px; }
   @media (min-width: 768px) {
     .portfolio header {
       margin-bottom: 144px; } }
@@ -1190,10 +1210,9 @@ h1, h2, h3, h4, h5, h6, p, li {
   position: relative;
   text-align: left;
   margin-top: 0rem;
-  margin-bottom: 5.0rem; }
-  @media (min-width: 768px) {
-    .archive .project-description {
-      margin-bottom: 8.0rem; } }
+  margin-bottom: 3.2rem; }
+  .archive .project-description .eyebrow {
+    color: #858585; }
   .archive .project-description [class*="blob"] {
     top: 50px;
     left: -120px;

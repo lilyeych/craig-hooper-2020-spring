@@ -1,7 +1,7 @@
 .portfolio {
 
 	header {
-    margin: 24px 10px 8px 10px;
+    margin: 45px 10px 8px 10px;
     
     @include breakpoint (baby-bear) {
       margin-bottom: 144px;
@@ -65,7 +65,16 @@
 
 	.screens {
 		@extend %vspacing;
-  }
+	}
+	
+	.browsers,
+	.browser-row {
+		>div:last-child {
+			img:last-child {
+				@extend %vspacing;
+			}
+		}
+	}
   
   .browser-portfolio-img {
     position: relative;
