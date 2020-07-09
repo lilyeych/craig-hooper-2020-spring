@@ -216,12 +216,6 @@ body {
   /* Safari, Android, iOS */ }
 
 @font-face {
-  font-family: 'Pilowlava';
-  src: url("../font/Pilowlava-RegularA9.eot");
-  src: url("../font/Pilowlava-RegularA9.woff2") format("woff2"), url("../font/Pilowlava-RegularA9.woff") format("woff");
-  /* Pretty Modern Browsers */ }
-
-@font-face {
   font-family: 'Degular';
   src: url("../font/Degular-Black.woff2") format("woff2"), url("../font/Degular-Black.woff") format("woff");
   /* Pretty Modern Browsers */
@@ -240,7 +234,7 @@ body {
   font-weight: 500; }
 
 .font-header, footer a {
-  font-family: "Pilowlava", "Times New Roman", Times, serif; }
+  font-family: "Eckmannpsych", "Times New Roman", Times, serif; }
 
 html, .btn, footer .type-link {
   font-family: "Degular", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
@@ -1212,7 +1206,10 @@ h1, h2, h3, h4, h5, h6, p, li {
   margin-top: 0rem;
   margin-bottom: 3.2rem; }
   .archive .project-description .eyebrow {
+    margin-bottom: 0.4rem;
     color: #858585; }
+  .archive .project-description .project-name {
+    font-weight: bold; }
   .archive .project-description [class*="blob"] {
     top: 50px;
     left: -120px;
