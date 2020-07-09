@@ -15,29 +15,29 @@ $zheader: 20;
 
 @font-face {
   font-family: 'Eckmannpsych';
-  src: url('../font/Eckmannpsych-Small.woff2') format('woff2'),
-       url('../font/Eckmannpsych-Small.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Eckmannpsych-Small.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Eckmannpsych-Small.woff2') format('woff2'),
+       url('../fonts/Eckmannpsych-Small.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Eckmannpsych-Small.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'Degular';
-  src: url('../font/Degular-Black.woff2') format('woff2'),
-       url('../font/Degular-Black.woff') format('woff'); /* Pretty Modern Browsers */
+  src: url('../fonts/Degular-Black.woff2') format('woff2'),
+       url('../fonts/Degular-Black.woff') format('woff'); /* Pretty Modern Browsers */
   font-weight: 800;
 }
 
 @font-face {
   font-family: 'Degular';
-  src: url('../font/Degular-Bold.woff2') format('woff2'),
-       url('../font/Degular-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+  src: url('../fonts/Degular-Bold.woff2') format('woff2'),
+       url('../fonts/Degular-Bold.woff') format('woff'); /* Pretty Modern Browsers */
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Degular';
-  src: url('../font/Degular-Medium.woff2') format('woff2'),
-       url('../font/Degular-Medium.woff') format('woff'); /* Pretty Modern Browsers */
+  src: url('../fonts/Degular-Medium.woff2') format('woff2'),
+       url('../fonts/Degular-Medium.woff') format('woff'); /* Pretty Modern Browsers */
   font-weight: 500;
 }
 

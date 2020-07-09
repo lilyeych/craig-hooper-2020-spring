@@ -77,7 +77,16 @@ h1, h2, h3, h4, h5, h6, p  {
 
 	.craig-2 {
 		position: relative;
-    &:after {
+
+		&:hover,
+		&:active,
+		&:focus {
+			.dot {
+				display: none;
+			}
+		}
+		
+    .dot {
       position: absolute;
       display: block;
       width: 100%;
@@ -87,14 +96,6 @@ h1, h2, h3, h4, h5, h6, p  {
       content: '';
       background: url('../img/dot.svg') no-repeat;
       background-size: 100% 100%;
-    }
-
-		&:hover,
-		&:active,
-		&:focus {
-			&:after {
-				display: none;
-			}
 		}
 
 		[class*="blob"] {

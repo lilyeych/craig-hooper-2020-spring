@@ -4,14 +4,14 @@ function picture() {
 
 function bgChange() {
 	// if ($('html').hasClass('homepage')) {
-	$(".intro").waypoint(function(direction) {
-		if (direction === 'down') {
-			$("body").removeClass("dark");
-		}
-		else {
-			$("body").addClass("dark");
-		}
-	});
+	// $(".intro").waypoint(function(direction) {
+	// 	if (direction === 'down') {
+	// 		$("body").removeClass("dark");
+	// 	}
+	// 	else {
+	// 		$("body").addClass("dark");
+	// 	}
+	// });
 	// }
 }
 
@@ -23,17 +23,17 @@ function animated() {
 	});
 }
 
-function masonry() {
-	var $projectList = $('.project-list').masonry({
-		itemSelector: '.project',
-		transitionDuration: '0s',
-		horizontalOrder: true
-	});
+// function masonry() {
+// 	var $projectList = $('.project-list').masonry({
+// 		itemSelector: '.project',
+// 		transitionDuration: '0s',
+// 		horizontalOrder: true
+// 	});
 
-	$projectList.imagesLoaded().progress( function() {
-		$projectList.masonry('layout');
-	});
-}
+// 	$projectList.imagesLoaded().progress( function() {
+// 		$projectList.masonry('layout');
+// 	});
+// }
 
 function scroll() {
 	// Select all links with hashes
@@ -109,15 +109,28 @@ $(function() {
 	picture();
 	animated();
 	// bgChange();
-	masonry();
+	// masonry();
 	scroll();
   parallax();
 
-	if ($("html").hasClass("no-touchevents")) {
-	 $('.project-images').imagesRotation();
-	}
+	// if ($("html").hasClass("no-touchevents")) {
+	//  $('.project-images').imagesRotation();
+	// }
 
 	$.jInvertScroll(['.project-collage img']);
+
+	// $('.craig-2').on({ 'touchstart' : function(){ 
+	// 	$('.craig-2 .blob-2').hide();
+	// } });
+
+
+   $(".craig-2").on("touchstart", function(e) {
+			$(".dot").hide();
+	 });
+	 
+	 $(".craig-2").on("touchend", function(e) {
+		$(".dot").show();
+ });
 
 });
 
