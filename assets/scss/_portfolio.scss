@@ -67,13 +67,14 @@
 		@extend %vspacing;
 	}
 	
-	.browsers,
+  .project,
+  .browsers,
 	.browser-row {
-		>div:last-child {
-			img:last-child {
-				@extend %vspacing;
-			}
-		}
+    margin-bottom: 66px;
+
+    @include breakpoint (baby-bear) {
+      margin-bottom: 128px;
+    }
 	}
   
   .browser-portfolio-img {
