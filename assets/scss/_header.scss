@@ -12,6 +12,13 @@ header {
 		width: 70px;
     height: auto;
     margin-bottom: 16px;
+    transition: all 0.1s;
+
+    &:hover {
+      @include breakpoint (baby-bear) {
+        animation: spin 0.25s linear infinite;
+      }
+    }
 
     img {
       border-radius: 50%;

@@ -6,16 +6,6 @@
     @include breakpoint (baby-bear) {
       margin-bottom: 144px;
     }
-
-    .avatar {
-      transition: all 0.1s;
-
-      &:hover {
-				@include breakpoint (baby-bear) {
-					animation: spin 0.25s linear infinite;
-				}
-      }
-    }
 	}
 
 	.project-detail {
