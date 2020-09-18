@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, p  {
 		top: 150px;
 		z-index: -1;
 		left: -20px;
- 
+
 		@include breakpoint (baby-bear) {
 			top: 320px;
 			left: -192px;
@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p  {
 	margin-bottom: 192px;
 
 	img {
-		border-radius: 6px;
+		border-radius: 16px;
 	}
 
 	@include breakpoint (max-tiny-bear) {
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6, p  {
 				display: none;
 			}
 		}
-		
+
     .dot {
       position: absolute;
       display: block;
@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6, p  {
 
 .project-images {
 	img {
-		border-radius: 6px;
+		border-radius: 16px;
 	}
 }
 
