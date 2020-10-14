@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTML 5 Ad by FCB-Chicago -->
+<head>
+	<title></title>
+	<!-- Studio Enabler Required -->
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+      
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+    <meta name="geo.country" content="US" />
+	<meta name="dc.language" content="en" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="ad.size" content="width=160,height=600">    
+	<style type="text/css">
+	#loading {
+		width:100%;
+		height:100%;
+		background-color:white;
+		z-index:10;
+	}
+	#loading_image {
+		position:absolute;
+		left:50%;
+		margin-left:-15px;
+		top:50%;
+		margin-top:-15px;
+	}
+	#container {
+		display:none;z-index:20;
+	}
+	</style>
+    
+    <script>
+		//Initialize Enabler
+		if (Enabler.isInitialized())
+		{
+			init();
+		}
+		else
+		{
+			Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+		}
+		//Run when Enabler is ready
+		function init()
+		{
+			//politeInit();
+			//Load in Javascript			
+			if(Enabler.isPageLoaded())
+			{
+				politeInit();
+			}
+			else
+			{
+				Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+			} 
+		}
+		
+		function politeInit()
+		{		
+			//Load in Javascript
+			var extJavascript = document.createElement("script");
+			extJavascript.setAttribute("type", "text/javascript");
+			extJavascript.setAttribute("src", Enabler.getUrl("banner.js")); 
+			document.getElementsByTagName("head")[0].appendChild(extJavascript); 
+			
+			//Load in CSS
+			var extCSS=document.createElement('link');
+			extCSS.setAttribute("rel", "stylesheet");
+			extCSS.setAttribute("type", "text/css");
+			extCSS.setAttribute("href", Enabler.getUrl("banner.css")); 
+			document.getElementsByTagName("head")[0].appendChild(extCSS);
+			document.getElementById("container").style.opacity=1;
+			document.getElementById("loading_image").style.opacity=0;
+		}
+	</script> 
+    	    
+</head>
+<body>
+	<div id="loading"><!-- Loading Animation -->
+        <div id="loading_image">
+               <img src="loading_dcs.gif">
+        </div>    
+    </div>
+    <div id="container">
+        <div id="content">
+        
+			<div id="photo1" class="divImage"><img src="photo1.jpg" width="160" height="600"/></div>	
+			<div id="photo2" class="divImage"><img src="photo2.jpg" width="160" height="600"/></div>	
+			<div id="photo3" class="divImage"><img src="photo3.jpg" width="160" height="600"/></div>				
+
+			<div id="containerLines" class="containerLines">
+				<div id="text1" class="containerLines"><img src="text1.png" width="160" height="785"/></div>				
+				<div id="text2" class="containerLines"><img src="text2.png" width="160" height="785"/></div>
+				<div id="text3" class="containerLines"><img src="text3.png" width="160" height="785"/></div>
+
+				<div id="line1" class="divImage">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 160 785" style="enable-background:new 0 0 160 785;" xml:space="preserve">
+						<g>
+							<path class="line1" fill="none" stroke="#fee200" stroke-width="5" stroke-miterlimit:10; d="M12.5,599V56h136v702h-17"/>
+						</g>
+					</svg>
+				</div> 
+				<div id="line2" class="divImage">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 160 785" style="enable-background:new 0 0 160 785;" xml:space="preserve">
+						<g>
+							<path class="line2" fill="none" stroke="#fee200" stroke-width="5" stroke-miterlimit:10; d="M28.5,757.5h-17v-159"/>
+						</g>
+					</svg>
+				</div> 
+
+		  </div>        
+        
+		<div id="overlay"></div>
+
+		<div id="text5" class="divImage"><img src="text5.png" width="160" height="600"/></div>
+
+		<div id="what_is_uptravi_parent" class="divImage">
+			<div id="what_is_uptravi" class="divImage"><img src="what_is_uptravi.png" width="125" height="100"/></div>
+		</div>
+		
+		<div id="line4" class="divImage">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			viewBox="0 0 160 600" style="enable-background:new 0 0 160 600;" xml:space="preserve">
+				<g>
+					<path class="line4" fill="none" stroke="#fee200" stroke-width="5" stroke-miterlimit:10; d="M16.5,272v96"/>
+				</g>
+			</svg>
+		</div> 		
+		
+		<!-- <div id="stop_at_nothing" class="divImage"><img src="stop_at_nothing.png" width="160" height="600"/></div> -->
+		
+		<div id="arrow_parent" class="divImage">
+			<div id="arrow" class="divImage"></div>
+		</div>		
+		
+		<!-- <div id="stop_at_nothing_over" class="divImage"><img src="stop_at_nothing_over.png" width="160" height="600"/></div> -->
+		
+		<div id="take_the_quiz" class="divImage"><img src="take_the_quiz.png" width="160" height="600"/></div>
+		<div id="logo" class="divImage"><img src="logo.png" width="160" height="600"/></div>
+		<div id="who_group" class="divImage"><img src="who_group.png" width="160" height="600"/></div>
+		
+		<div id="exitButton"></div>
+		
+		<div id="footer" class="divImage">
+			<div id="cta_pi" class="divImage"><img src="cta_pi.png" width="72" height="17"/></div> 
+			<div id="cta_medication_guide" class="divImage"><img src="cta_medication_guide.png" width="87" height="17"/></div> 
+			
+			<div id="isiOutsideContainer">
+				<div id="isiContainer">
+						<div id="isiHeadline">IMPORTANT SAFETY INFORMATION</div>
+						<div id="isiHeadline">What is the most important information about UPTRAVI?</div>
+						<div id="isiHeadline">Who should not take UPTRAVI?</div>
+						<ul><li><span>Do not take UPTRAVI if you take gemfibrozil because this medicine may affect how UPTRAVI works and cause side effects</span></li></ul>
+						<div id="isiHeadline">What should I tell my doctor before taking UPTRAVI?</div>
+							<div>Tell your doctor if you:</div>
+							<ul><li><span>Have liver problems</span></li></ul>							
+							<ul><li><span>Have narrowing of the pulmonary veins (veins in your lungs). This is called pulmonary veno-occlusive disease (PVOD)</span></li></ul>	<ul><li><span>Are pregnant or plan to become pregnant. It is not known if UPTRAVI will harm your unborn baby</span></li></ul>						
+							<ul><li><span>Are breastfeeding or plan to breastfeed. It is not known if UPTRAVI passes into your breast milk. You and your doctor should decide if you will take UPTRAVI or breastfeed. You should not do both</span></li></ul>	
+							<ul><li><span>Have any other medical conditions</span></li></ul>
+							<ul><li><span>Are taking any other prescription or over-the-counter medicines, vitamins, or herbal supplements</span></li></ul>		
+							<div id="isiHeadline">What are the possible side effects of UPTRAVI?</div>
+							<div>The most common side effects are:</div>
+							<ul><li><span>Headache</span></li></ul>		
+							<ul><li><span>Diarrhea</span></li></ul>		
+							<ul><li><span>Jaw pain</span></li></ul>		
+							<ul><li><span>Nausea</span></li></ul>		
+							<ul><li><span>Muscle pain</span></li></ul>	
+							<ul><li><span>Vomiting</span></li></ul>	
+							<ul><li><span>Pain in arms or legs</span></li></ul>	
+							<ul><li><span>Temporary reddening of the skin (flushing)</span></li></ul>	
+							<ul><li><span>Joint pain</span></li></ul>	
+							<ul><li><span>Low red blood cell count</span></li></ul>	
+							<ul><li><span>Less appetite than usual</span></li></ul>	
+							<ul><li><span>Rash</span></li></ul>	
+							<div>Talk to your doctor if you have a side effect that bothers you or does not go away. These are not all the possible side effects of UPTRAVI. For more information, ask your doctor or pharmacist.</div>		
+							<div>You may report side effects to <strong><a style="color:#006f33;text-decoration: none;" target="_blank" href="tel:18003321088;">FDA at 1-800-FDA-1088</a> or <a style="color:#006f33;text-decoration: none;" target="_blank" href="https://www.fda.gov/medwatch">www.fda.gov/medwatch.</a></strong></div>
+							<div>Keep UPTRAVI and all other medicines away from children.</div>
+							<div id="isiHeadline">What other medicines might interact with UPTRAVI?</div>
+							<ul><li><span>UPTRAVI and other medicines may affect each other, causing side effects. Tell your doctor about all the medicines you are taking. Do not start any new medicine until you check with your doctor</span></li></ul>	
+							<div id="isiHeadline">How should I take UPTRAVI?</div>
+							<ul><li><span>Take UPTRAVI exactly as your doctor tells you to take it. Usually, your doctor will have you take UPTRAVI twice a day. Taking UPTRAVI with food may help you tolerate UPTRAVI better</span></li></ul>	
+							<ul><li><span>Swallow UPTRAVI tablets whole. Do not split, crush, or chew tablets</span></li></ul>	
+							<ul><li><span>Tell your doctor if you have any form of liver disease. Your doctor may need to change your dose of UPTRAVI</span></li></ul>			<ul><li><span>UPTRAVI is measured in micrograms (mcg). Tablets come in the following strengths: 200, 400, 600, 800, 1000, 1200, 1400, and 1600 mcg</span></li></ul>																																																				
+							<div id="isiHeadline">What is UPTRAVI?</div>
+							<div>UPTRAVI<span class="copyRight">&reg;</span> (selexipag) is a prescription medicine used to treat pulmonary arterial hypertension (PAH, WHO Group 1), which is high blood pressure in the arteries of your lungs.</div>																					
+							UPTRAVI can help delay (slow down) the progression of your disease and lower your risk of being hospitalized for PAH.<br>
+							<div>It is not known if UPTRAVI is safe and effective in children.</div>
+							<div>Please see full <a style="color:#006f33;text-decoration: underline;" target="_blank" href="https://www.janssenlabels.com/package-insert/product-monograph/prescribing-information/UPTRAVI-pi.pdf"><strong>Prescribing Information</strong></a> and <a style="color:#006f33;text-decoration: underline;" target="_blank" href="https://adduptravi.com/public/pdf/UPTRAVI-Patient-Product-Information.pdf"><strong>Patient Product Information.</strong></a></div>
+							
+							<div><img src="end_legal.jpg" width="134" height="207"/></div>  
+	        			     			 
+					</div>
+			</div> 			
+			
+		</div>	
+		
+						
+	</div>
+</div>	
+<script src="DrawSVGPlugin.min.js"></script>
+</body>
+</html>
