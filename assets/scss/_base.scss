@@ -261,7 +261,7 @@ footer {
 	position: absolute;
 	display: block;
 	width: 270px!important;
-	height: 141px!important;
+	height: 87px!important;
 	-webkit-transition: .15s ease-in-out;
 	-moz-transition: .15s ease-in-out;
   -o-transition: .15s ease-in-out;
@@ -274,7 +274,7 @@ footer {
 
 	@include breakpoint (baby-bear) {
 		width: 370px!important;
-		height: 194px!important;
+		height: 111px!important;
 	}
 }
 

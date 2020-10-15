@@ -38,7 +38,7 @@ $susy: (
 	margin-left: 3.74999%;
 	margin-right: 3.74999%;
 
-	@include breakpoint (baby-bear) {
+	@include breakpoint (mama-bear) {
 		@include span(7 at 4 isolate);
 	}
 }
@@ -49,7 +49,7 @@ $susy: (
 	margin-left: 3.74999%;
 	margin-right: 3.74999%;
 
-	@include breakpoint (baby-bear) {
+	@include breakpoint (mama-bear) {
 		@include span(8 at 3 isolate);
 	}
 }
@@ -159,7 +159,7 @@ $susy: (
 	.left {
 		@include span(4 of 4);
 
-		@include breakpoint (baby-bear) {
+		@include breakpoint (mama-bear) {
 			@include span(5 at 3 isolate);
 		}
 	}
