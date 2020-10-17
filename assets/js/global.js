@@ -48,7 +48,12 @@ $(function() {
 	 $('.project-images').imagesRotation();
 	}
 
-	$.jInvertScroll(['.project-collage img']);
+  $.jInvertScroll(['.project-collage img']);
+  
+  window.addEventListener("resize", function() {
+    console.log("tessd");
+    $.jInvertScroll(['.project-collage img']);
+  });
 
 	// $('.craig-2').on({ 'touchstart' : function(){ 
 	// 	$('.craig-2 .blob-2').hide();
