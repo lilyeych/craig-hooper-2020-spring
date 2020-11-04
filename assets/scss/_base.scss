@@ -102,7 +102,7 @@ span[class*="scratch"] {
 .intro {
 	margin-bottom: 32px;
 
-	@include breakpoint (baby-bear) {
+	@include breakpoint (mama-bear) {
 		margin-bottom: 192px;
 	}
 }

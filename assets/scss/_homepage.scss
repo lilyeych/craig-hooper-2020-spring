@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, p  {
 
 	.craig-1 {
 		margin-top: 250px;
-		@include breakpoint (baby-bear) {
+		@include breakpoint (mama-bear) {
 			margin-top: 490px;
 		}
 	}

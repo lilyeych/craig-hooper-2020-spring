@@ -94,7 +94,7 @@ $zheader: 20;
 %vspacing {
   margin-bottom: 80px;
 
-  @include breakpoint (baby-bear) {
+  @include breakpoint (mama-bear) {
     margin-bottom: 192px;
   }
 }
@@ -106,7 +106,7 @@ $zheader: 20;
 %browserspacing {
   margin-bottom: 30px;
 
-  @include breakpoint (baby-bear) {
+  @include breakpoint (mama-bear) {
     margin-bottom: 64px;
   }
 }
@@ -166,6 +166,10 @@ $zheader: 20;
     position: absolute;
     bottom: 3px;
     left: 50px;
+
+    @include breakpoint (baby-bear) {
+      left: 70px;
+    }
 
     @include breakpoint (papa-bear) {
       bottom: 15px;

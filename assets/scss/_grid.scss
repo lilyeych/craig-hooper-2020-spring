@@ -167,7 +167,7 @@ $susy: (
 	.right {
 		@include span(4 of 4);
 
-		@include breakpoint (baby-bear) {
+		@include breakpoint (mama-bear) {
 			@include span(5 at 6 isolate);
 		}
 	}
@@ -175,7 +175,7 @@ $susy: (
 	.center {
 		@include span(4 of 4);
 
-		@include breakpoint (baby-bear) {
+		@include breakpoint (mama-bear) {
 			@include span(4 at 5 isolate);
 		}
 	}
