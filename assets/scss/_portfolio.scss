@@ -23,6 +23,11 @@
 			@include breakpoint (mama-bear) {
 				width: 1770px;
 				max-width: 1770px;
+      }
+      
+      @media (min-width: 1770px) {
+				width: 100%;
+				max-width: 100%;
 			}
 		}
 	}
